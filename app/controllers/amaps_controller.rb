@@ -4,6 +4,6 @@ class AmapsController < ApplicationController
   end
 
   def show
-      @amaps = Amap.find(params[:id])
+      @amap = Amap.find(params[:id])
     end
 end
