@@ -1,0 +1,2 @@
+class Amap < ApplicationRecord
+end
