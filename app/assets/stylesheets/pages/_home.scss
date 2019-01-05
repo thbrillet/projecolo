@@ -3,6 +3,7 @@
         width: 50%;
         height: 400px;
         background-color: grey;
+
       }
 
 
@@ -10,6 +11,9 @@
   width : 100vw;
   height : 100vh;
   background-color : yellow;
+  overflow : hidden;
+  display : flex;
+  flex-direction : column;
 
   .search{
     width : 100vw;
@@ -25,9 +29,9 @@
 
   .listing{
     width : 100vw;
-    height : 60%;
     background-color : pink;
     overflow : scroll;
+    flex-grow : 1;
   }
 
 }

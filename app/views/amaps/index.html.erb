@@ -1,5 +1,19 @@
 <div class="container-index">
-  <div class="search"></div>
-  <div class="filters"></div>
-  <div class="listing"></div>
+  <div class="search">
+    <h1> Type here your adress</h1>
+  </div>
+  <div class="filters">
+    <h2>Filter 1 // Fiter 2 // Filter 3</h2>
+  </div>
+  <div class="listing">
+    <% @amaps.each do | amap | %>
+      <div class="amap-card">
+        <%= amap.name %>
+        <%= amap.address %>
+        <%= amap.website %>
+        <%= amap.email %>
+        <%= amap.nb_supplier %>
+      </div>
+    <% end %>
+  </div>
 </div>
