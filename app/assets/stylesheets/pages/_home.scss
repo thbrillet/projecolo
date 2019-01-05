@@ -4,3 +4,30 @@
         height: 400px;
         background-color: grey;
       }
+
+
+.container-index{
+  width : 100vw;
+  height : 100vh;
+  background-color : yellow;
+
+  .search{
+    width : 100vw;
+    height : 20%;
+    background-color : grey;
+  }
+
+  .filters{
+    width : 100vw;
+    height : 20%;
+    background-color : red;
+  }
+
+  .listing{
+    width : 100vw;
+    height : 60%;
+    background-color : pink;
+    overflow : scroll;
+  }
+
+}
