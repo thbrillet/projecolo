@@ -7,10 +7,50 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Amap.destroy_all
 
-records = JSON.parse(File.read('/home/projects/test1/public/products.json'))
-records.each do |record|
-  ModelName.create!(record)
-end
+Amap.create!(
+  name: 'AMAP Hommes de Terre',
+  address: 'Pierre Blanche, 44521 Oudon',
+  website: 'http://amapoudon.free.fr',
+  email: 'thierry.bonsergent@gmail.com',
+  nb_supplier: 5,
+  "latitude": "47.357162,-","longitude": "-1.3226387"
+  )
 
-Amap.create(name: 'Super Patates', address: '12 rue des trois croissants', website: 'www.superpatates.fr', email: 'contact@superpatates.fr', nb_supplier: 4, "latitude": "48.390394","longitude": "-4.486076")
-Amap.create(name: 'Salades à gogo', address: '47 rue du petit passage', website: 'www.saladesagogo.fr', email: 'contact@saladesagogo.fr', nb_supplier: 4, "latitude": "51.499581", "longitude": "-0.127309")
+
+Amap.create!(
+  name: 'AMAP de Nort sur Erdre',
+  address: 'La Garenne, 44390 Nord sur Erdre',
+  website: 'https://amapnort.wixsite.com/site',
+  email: 'amap.nort@gmail.com',
+  nb_supplier: 5,
+  "latitude": "47.4382105", "longitude": "-1.5063662"
+  )
+
+
+
+Amap.create!(
+  name: 'AMAP du SAVARY',
+  address: '17 rue du Bois Savary, 44600 St Nazaire ',
+  website: 'https://www.amap44.org/amap-du-savary/',
+  email: '',
+  nb_supplier: 1,
+  "latitude": "47.2749086", "longitude": "-2.2112197"
+  )
+
+Amap.create!(
+  name: 'AMAP la Vinaudais',
+  address: 'La vinaudais, 44320 St Père en Retz ',
+  website: 'http://www.potagerbioderetz.com/',
+  email: 'j.blomqvist@yahoo.fr',
+  nb_supplier: 5,
+  "latitude": "47.266477", "longitude": "-2.033736"
+  )
+
+Amap.create!(
+  name: 'AMAP Ancenis',
+  address: 'La Marchanderie, 44150 Ancenis',
+  website: 'http://www.amap-ancenis.fr/',
+  email: 'amapancenis@gmail.com',
+  nb_supplier: 9,
+  "latitude": "47.3891366", "longitude": "-1.1973153"
+  )
