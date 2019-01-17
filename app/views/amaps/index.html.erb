@@ -5,15 +5,78 @@
   <div class="filters">
     <h2>Filter 1 // Fiter 2 // Filter 3</h2>
   </div>
-  <div class="listing">
+  <!--div class="listing">
     <% @amaps.each do | amap | %>
+
       <div class="amap-card">
-        <%= amap.name %>
-        <%= amap.address %>
-        <%= amap.website %>
-        <%= amap.email %>
-        <%= amap.nb_supplier %>
+        <div class="amap-name">
+          <%= amap.name %>
+        </div>
+        <div class="amap-details">
+          <%= amap.address %>
+          <%= amap.website %>
+          <%= amap.email %>
+          <%= amap.nb_supplier %>
+        </div>
+
       </div>
     <% end %>
+  </div-->
+
+
+  <div class='listing'>
+<% @amaps.each do | amap | %>
+  <div class='card'>
+    <div class='card-title'>
+      <h2>
+        <%= amap.name %>
+        <small><%= amap.address %></small>
+      </h2>
+      <div class='task-count'>
+        <%= amap.nb_supplier %>
+      </div>
+    </div>
+    <div class='card-flap flap1'>
+      <div class='card-description'>
+        <ul class='task-list'>
+          <li>
+             adresse: <%= amap.address %>
+              <span>59%</span>
+          </li>
+          <li>
+             website:
+             <%= amap.website %>
+            <span>11%</span>
+          </li>
+          <li>
+            webmail:
+            <%= amap.email %>
+            <span>100%</span>
+
+          </li>
+          <li>
+            nb supplier :
+            <%= amap.nb_supplier %>
+            <span>7%</span>
+          </li>
+        </ul>
+        <div class='card-actions'>
+          <a  href=<%= amap.email %>>Contact</a>
+        </div>
+        <div class='card-actions'>
+          <a  href=<%= amap.website %>>Website</a>
+        </div>
+      </div>
+      <div class='card-flap flap2'>
+
+                <div class='card-actions'>
+          <a class='btn' href='#'>Close</a>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <% end %>
+</div>
+
 </div>
